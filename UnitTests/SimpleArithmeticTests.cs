@@ -52,7 +52,7 @@ namespace UnitTests
         {
             var simpleArithmetic = new SimpleArithmetic();
 
-            Assert.IsTrue(simpleArithmetic.Division(0, 0) == float.NaN);
+            Assert.IsTrue(float.IsNaN(simpleArithmetic.Division(0, 0)));
         }
     }
 }

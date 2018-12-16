@@ -44,7 +44,15 @@ namespace UnitTests
         {
             var simpleArithmetic = new SimpleArithmetic();
 
-            simpleArithmetic.Division(2,0);
+            simpleArithmetic.Division(2, 0);
+        }
+
+        [TestMethod]
+        public void TestDivisionNaN()
+        {
+            var simpleArithmetic = new SimpleArithmetic();
+
+            Assert.IsTrue(simpleArithmetic.Division(0, 0) == float.NaN);
         }
     }
 }

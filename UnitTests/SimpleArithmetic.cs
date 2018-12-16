@@ -17,7 +17,7 @@
             return x * y;
         }
 
-        public decimal Division(int x, int y)
+        public float Division(float x, float y)
         {
             return x / y;
         }

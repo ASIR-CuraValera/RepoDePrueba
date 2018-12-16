@@ -39,12 +39,11 @@ namespace UnitTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(DivideByZeroException))]
         public void TestDivisionByZero()
         {
             var simpleArithmetic = new SimpleArithmetic();
 
-            simpleArithmetic.Division(2, 0);
+            Assert.IsTrue(float.IsInfinity(simpleArithmetic.Division(2, 0));
         }
 
         [TestMethod]
